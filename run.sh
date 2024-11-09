@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd out
-./gcrisp
+./gcrisp-engine
