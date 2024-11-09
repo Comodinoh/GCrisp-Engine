@@ -1,9 +1,9 @@
 #include <GCrisp/core.h>
-#include <SDL3/SDL.h>
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
-  GCrispCoreInfo* core_info = gcrisp_core_start("asd", 1);
-  SDL_Log("Meow");
+  gcrisp::GameEngine engine = gcrisp::GameEngine({"asd", 1});
+  std::cout << engine.game_info.game_name << std::endl;
   return 0;
 }
