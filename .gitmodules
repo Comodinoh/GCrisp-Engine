@@ -1,0 +1,3 @@
+[submodule "lib/GCrisp"]
+	path = lib/GCrisp
+	url = https://github.com/Comodinoh/GCrisp.git
