@@ -1,9 +1,19 @@
-#include <GCrisp/core.h>
-#include <iostream>
+#include <GCrisp/gcrisp.h>
 
-int main(int argc, char *argv[])
+class GCrispApplication : public gcrisp::Application{
+public:
+  GCrispApplication()
+  {
+
+  }
+
+  ~GCrispApplication()
+  {
+
+  }
+};
+
+gcrisp::Application* gcrisp::CreateApplication()
 {
-  gcrisp::GameEngine engine = gcrisp::GameEngine({"asd", 1});
-  std::cout << engine.game_info.game_name << std::endl;
-  return 0;
+  return new GCrispApplication();
 }

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30.5)
-project(gcrisp-engine)
+project(gcrisp-script)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
